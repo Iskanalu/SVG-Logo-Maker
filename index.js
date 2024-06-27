@@ -33,27 +33,27 @@ async function promtUser() {
         {
             type: 'input',
             name: 'shapeColor',
-            message: 'Enter the shape of color (keyword or hexadecimal number):',
+            message: 'Enter the shape color (keyword or hexadecimal number):',
         },
     ]);
 
     return userInput;
 }
 
-function generateSVG({ text, textColor, shape, shapeColor }) {
+export function generateSVG({ text, textColor, shape, shapeColor }) {
     const svg = SVG(document.documentElement).size(300,200);
 
     //Draw shape
     if (shape === 'circle') {
         svg.circle(100).fill(shapeColor);
-    } else if (shape === 'tringle') {
-        svg.polygin('100,0 50,100 150,100').fill(shapeColor);
+    } else if (shape === 'triangle') {
+        svg.polygon('100,0 50,100 150,100').fill(shapeColor);
     } else if (shape === 'square') {
         svg.rect(100, 100).fill(shapeColor);
     }
 
     //Add text
-    svg.text(text).fill(textColor).move(100 - text.length * 10, 100);
+    svg.text(text).fill(textColor).transform({ translateX: 41 , translateY: 55 });
 
     return svg.svg();
 }
