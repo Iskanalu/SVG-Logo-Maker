@@ -23,7 +23,7 @@ describe('generateSVG', () => {
     test('should be a a triangle', () => {
         const data = { text: 'ABC', textColor: 'blue', shape: 'triangle', shapeColor: 'white' };
         const newSvg = generateSVG(data);
-        // expect(newSvg).toContain('triangle');
+        expect(newSvg).toContain('polygon');
     });
 
     test('should be a square', () => {
@@ -35,7 +35,7 @@ describe('generateSVG', () => {
     test('should contain the text given by the user and the color', () => {
         const data = { text: 'ABC', textColor: 'blue', shape: 'square', shapeColor: 'white' };
         const newSvg = generateSVG(data);
-        expect(newSvg).toContain('<text fill="red"');
+        expect(newSvg).toContain('<text fill="blue"');
         expect(newSvg).toContain('ABC');
     })
 

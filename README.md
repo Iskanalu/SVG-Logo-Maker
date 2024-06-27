@@ -1,15 +1,15 @@
 # SVG Logo Maker
 
-## This application will prompt the user to select a color and shape, provide text for the logo, and save the generated SVG to a .svg file.
+### This application will prompt the user to select a color and shape, provide text for the logo, and save the generated SVG to a .svg file.
 
 # User Story
 
 AS a freelance web developer,
-I WANT to generate a simple logo for my projects,  SO THAT I don't have to pay a graphic designer
+I WANT to generate a simple logo for my projects,  SO THAT I don't have to pay a graphic designer.
 
 # Acceptance Criteria
 
-GIVEN a command-line application that accepts user input
+GIVEN a command-line application that accepts user input.
 
 - It's done WHEN I am prompted for text,
 THEN I can enter up to three characters.
@@ -30,14 +30,14 @@ AND the output text "Generated logo.svg" is printed in the command line.
 - It's done WHEN I open the `logo.svg` file in a browser
 THEN I am shown a 300x200 pixel image that matches the criteria I entered.
 
-# Ussage
+# Usage
 
-What are the steps required to install your project? Provide a step-by-step description of how to get the development environment running.
+The following video shows the application's functionality and all the passing unit tests [Click here to watch ussage](https://youtu.be/ReQHikq18Jk)
 
 
 ## Mock-Up
 
-![The foolowing image shows the web application's appearance and functionality:](./10-oop-homework-demo.png)
+![The foolowing image shows the application's appearance and functionality:](./10-oop-homework-demo.png)
 
 ## Tests
 
